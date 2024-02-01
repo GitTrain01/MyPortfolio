@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "391991262995",
+    "project_id": "portfolio-pelc40",
+    "storage_bucket": "portfolio-pelc40.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:391991262995:android:a76d79455118bb335ca4e6",
+        "android_client_info": {
+          "package_name": "com.myportfolio"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUzMnaYPxbj1DdbUwS_VUhBT7r92Ar3Bc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
