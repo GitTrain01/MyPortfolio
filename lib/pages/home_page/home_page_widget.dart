@@ -1,4 +1,5 @@
 import '/flutter_flow/flutter_flow_animations.dart';
+import '/flutter_flow/flutter_flow_expanded_image_view.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_pdf_viewer.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
@@ -1296,7 +1297,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                           padding:
                                               const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 12.0, 0.0, 0.0),
-                                          child: Text(
+                                          child: SelectionArea(
+                                              child: Text(
                                             'Fresh graduate from Mabalacat City College, currently holding a bachelor\'s degree in Information Technology. I have experience on front-end using flutter during our Capstone Project.',
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
@@ -1304,7 +1306,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                   fontFamily: 'Readex Pro',
                                                   fontWeight: FontWeight.w300,
                                                 ),
-                                          ),
+                                          )),
                                         ),
                                         Padding(
                                           padding:
@@ -1340,14 +1342,16 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                       0.0,
                                                                       0.0,
                                                                       0.0),
-                                                          child: Text(
+                                                          child: SelectionArea(
+                                                              child: Text(
                                                             'Age: ',
                                                             style: FlutterFlowTheme
                                                                     .of(context)
                                                                 .bodyMedium,
-                                                          ),
+                                                          )),
                                                         ),
-                                                        Text(
+                                                        SelectionArea(
+                                                            child: Text(
                                                           '22 Years Old',
                                                           style: FlutterFlowTheme
                                                                   .of(context)
@@ -1359,7 +1363,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                     FontWeight
                                                                         .w200,
                                                               ),
-                                                        ),
+                                                        )),
                                                       ],
                                                     ),
                                                     Padding(
@@ -1390,14 +1394,17 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                         0.0,
                                                                         0.0,
                                                                         0.0),
-                                                            child: Text(
+                                                            child:
+                                                                SelectionArea(
+                                                                    child: Text(
                                                               'City: ',
                                                               style: FlutterFlowTheme
                                                                       .of(context)
                                                                   .bodyMedium,
-                                                            ),
+                                                            )),
                                                           ),
-                                                          Text(
+                                                          SelectionArea(
+                                                              child: Text(
                                                             'Pampanga',
                                                             style: FlutterFlowTheme
                                                                     .of(context)
@@ -1409,7 +1416,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                       FontWeight
                                                                           .w200,
                                                                 ),
-                                                          ),
+                                                          )),
                                                         ],
                                                       ),
                                                     ),
@@ -1448,14 +1455,17 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                         0.0,
                                                                         0.0,
                                                                         0.0),
-                                                            child: Text(
+                                                            child:
+                                                                SelectionArea(
+                                                                    child: Text(
                                                               'Freelance: ',
                                                               style: FlutterFlowTheme
                                                                       .of(context)
                                                                   .bodyMedium,
-                                                            ),
+                                                            )),
                                                           ),
-                                                          Text(
+                                                          SelectionArea(
+                                                              child: Text(
                                                             'Available',
                                                             style: FlutterFlowTheme
                                                                     .of(context)
@@ -1467,7 +1477,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                       FontWeight
                                                                           .w200,
                                                                 ),
-                                                          ),
+                                                          )),
                                                         ],
                                                       ),
                                                       Padding(
@@ -1498,14 +1508,18 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                           0.0,
                                                                           0.0,
                                                                           0.0),
-                                                              child: Text(
+                                                              child:
+                                                                  SelectionArea(
+                                                                      child:
+                                                                          Text(
                                                                 'Address: ',
                                                                 style: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium,
-                                                              ),
+                                                              )),
                                                             ),
-                                                            Text(
+                                                            SelectionArea(
+                                                                child: Text(
                                                               'Sta. Lucia Magalang.',
                                                               style: FlutterFlowTheme
                                                                       .of(context)
@@ -1517,7 +1531,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                         FontWeight
                                                                             .w200,
                                                                   ),
-                                                            ),
+                                                            )),
                                                           ],
                                                         ),
                                                       ),
@@ -1680,18 +1694,63 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                           24.0,
                                                                           24.0,
                                                                           24.0),
-                                                              child: ClipRRect(
-                                                                borderRadius:
-                                                                    BorderRadius
-                                                                        .circular(
+                                                              child: InkWell(
+                                                                splashColor: Colors
+                                                                    .transparent,
+                                                                focusColor: Colors
+                                                                    .transparent,
+                                                                hoverColor: Colors
+                                                                    .transparent,
+                                                                highlightColor:
+                                                                    Colors
+                                                                        .transparent,
+                                                                onTap:
+                                                                    () async {
+                                                                  await Navigator
+                                                                      .push(
+                                                                    context,
+                                                                    PageTransition(
+                                                                      type: PageTransitionType
+                                                                          .fade,
+                                                                      child:
+                                                                          FlutterFlowExpandedImageView(
+                                                                        image: Image
+                                                                            .asset(
+                                                                          'assets/images/gameMaker.png',
+                                                                          fit: BoxFit
+                                                                              .contain,
+                                                                        ),
+                                                                        allowRotation:
+                                                                            false,
+                                                                        tag:
+                                                                            'imageTag1',
+                                                                        useHeroAnimation:
+                                                                            true,
+                                                                      ),
+                                                                    ),
+                                                                  );
+                                                                },
+                                                                child: Hero(
+                                                                  tag:
+                                                                      'imageTag1',
+                                                                  transitionOnUserGestures:
+                                                                      true,
+                                                                  child:
+                                                                      ClipRRect(
+                                                                    borderRadius:
+                                                                        BorderRadius.circular(
                                                                             24.0),
-                                                                child:
-                                                                    Image.asset(
-                                                                  'assets/images/gameMaker.png',
-                                                                  width: 300.0,
-                                                                  height: 200.0,
-                                                                  fit: BoxFit
-                                                                      .cover,
+                                                                    child: Image
+                                                                        .asset(
+                                                                      'assets/images/gameMaker.png',
+                                                                      width:
+                                                                          300.0,
+                                                                      height:
+                                                                          200.0,
+                                                                      fit: BoxFit
+                                                                          .cover,
+                                                                    ),
+                                                                  ),
                                                                 ),
                                                               ),
                                                             ),
@@ -1704,7 +1763,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                         12.0,
                                                                         0.0,
                                                                         0.0),
-                                                            child: AutoSizeText(
+                                                            child: SelectionArea(
+                                                                child: AutoSizeText(
                                                               'GameMaker',
                                                               style: FlutterFlowTheme
                                                                       .of(context)
@@ -1716,7 +1776,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                         16.0,
                                                                   ),
                                                               minFontSize: 14.0,
-                                                            ),
+                                                            )),
                                                           ),
                                                           Padding(
                                                             padding:
@@ -1726,7 +1786,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                         12.0,
                                                                         0.0,
                                                                         0.0),
-                                                            child: AutoSizeText(
+                                                            child: SelectionArea(
+                                                                child: AutoSizeText(
                                                               'Designed and developed a game using GameMaker Studio, showcasing skills in game development, programming, and creative design.',
                                                               textAlign:
                                                                   TextAlign
@@ -1744,7 +1805,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                             .w300,
                                                                   ),
                                                               minFontSize: 12.0,
-                                                            ),
+                                                            )),
                                                           ),
                                                         ],
                                                       ),
@@ -1812,18 +1873,63 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                           24.0,
                                                                           24.0,
                                                                           24.0),
-                                                              child: ClipRRect(
-                                                                borderRadius:
-                                                                    BorderRadius
-                                                                        .circular(
+                                                              child: InkWell(
+                                                                splashColor: Colors
+                                                                    .transparent,
+                                                                focusColor: Colors
+                                                                    .transparent,
+                                                                hoverColor: Colors
+                                                                    .transparent,
+                                                                highlightColor:
+                                                                    Colors
+                                                                        .transparent,
+                                                                onTap:
+                                                                    () async {
+                                                                  await Navigator
+                                                                      .push(
+                                                                    context,
+                                                                    PageTransition(
+                                                                      type: PageTransitionType
+                                                                          .fade,
+                                                                      child:
+                                                                          FlutterFlowExpandedImageView(
+                                                                        image: Image
+                                                                            .asset(
+                                                                          'assets/images/download_(2).png',
+                                                                          fit: BoxFit
+                                                                              .contain,
+                                                                        ),
+                                                                        allowRotation:
+                                                                            false,
+                                                                        tag:
+                                                                            'imageTag2',
+                                                                        useHeroAnimation:
+                                                                            true,
+                                                                      ),
+                                                                    ),
+                                                                  );
+                                                                },
+                                                                child: Hero(
+                                                                  tag:
+                                                                      'imageTag2',
+                                                                  transitionOnUserGestures:
+                                                                      true,
+                                                                  child:
+                                                                      ClipRRect(
+                                                                    borderRadius:
+                                                                        BorderRadius.circular(
                                                                             24.0),
-                                                                child:
-                                                                    Image.asset(
-                                                                  'assets/images/download_(2).png',
-                                                                  width: 300.0,
-                                                                  height: 200.0,
-                                                                  fit: BoxFit
-                                                                      .cover,
+                                                                    child: Image
+                                                                        .asset(
+                                                                      'assets/images/download_(2).png',
+                                                                      width:
+                                                                          300.0,
+                                                                      height:
+                                                                          200.0,
+                                                                      fit: BoxFit
+                                                                          .cover,
+                                                                    ),
+                                                                  ),
                                                                 ),
                                                               ),
                                                             ),
@@ -1836,7 +1942,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                         12.0,
                                                                         0.0,
                                                                         0.0),
-                                                            child: AutoSizeText(
+                                                            child: SelectionArea(
+                                                                child: AutoSizeText(
                                                               'Flutter',
                                                               style: FlutterFlowTheme
                                                                       .of(context)
@@ -1848,7 +1955,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                         16.0,
                                                                   ),
                                                               minFontSize: 14.0,
-                                                            ),
+                                                            )),
                                                           ),
                                                           Padding(
                                                             padding:
@@ -1858,7 +1965,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                         12.0,
                                                                         0.0,
                                                                         0.0),
-                                                            child: AutoSizeText(
+                                                            child: SelectionArea(
+                                                                child: AutoSizeText(
                                                               'Set as our Framwork during our Capstone Project. This framework use Dart as Programming Language.',
                                                               textAlign:
                                                                   TextAlign
@@ -1876,7 +1984,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                             .w300,
                                                                   ),
                                                               minFontSize: 12.0,
-                                                            ),
+                                                            )),
                                                           ),
                                                         ],
                                                       ),
@@ -1944,18 +2052,63 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                           24.0,
                                                                           24.0,
                                                                           24.0),
-                                                              child: ClipRRect(
-                                                                borderRadius:
-                                                                    BorderRadius
-                                                                        .circular(
+                                                              child: InkWell(
+                                                                splashColor: Colors
+                                                                    .transparent,
+                                                                focusColor: Colors
+                                                                    .transparent,
+                                                                hoverColor: Colors
+                                                                    .transparent,
+                                                                highlightColor:
+                                                                    Colors
+                                                                        .transparent,
+                                                                onTap:
+                                                                    () async {
+                                                                  await Navigator
+                                                                      .push(
+                                                                    context,
+                                                                    PageTransition(
+                                                                      type: PageTransitionType
+                                                                          .fade,
+                                                                      child:
+                                                                          FlutterFlowExpandedImageView(
+                                                                        image: Image
+                                                                            .asset(
+                                                                          'assets/images/download.png',
+                                                                          fit: BoxFit
+                                                                              .contain,
+                                                                        ),
+                                                                        allowRotation:
+                                                                            false,
+                                                                        tag:
+                                                                            'imageTag3',
+                                                                        useHeroAnimation:
+                                                                            true,
+                                                                      ),
+                                                                    ),
+                                                                  );
+                                                                },
+                                                                child: Hero(
+                                                                  tag:
+                                                                      'imageTag3',
+                                                                  transitionOnUserGestures:
+                                                                      true,
+                                                                  child:
+                                                                      ClipRRect(
+                                                                    borderRadius:
+                                                                        BorderRadius.circular(
                                                                             24.0),
-                                                                child:
-                                                                    Image.asset(
-                                                                  'assets/images/download.png',
-                                                                  width: 300.0,
-                                                                  height: 200.0,
-                                                                  fit: BoxFit
-                                                                      .cover,
+                                                                    child: Image
+                                                                        .asset(
+                                                                      'assets/images/download.png',
+                                                                      width:
+                                                                          300.0,
+                                                                      height:
+                                                                          200.0,
+                                                                      fit: BoxFit
+                                                                          .cover,
+                                                                    ),
+                                                                  ),
                                                                 ),
                                                               ),
                                                             ),
@@ -1968,7 +2121,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                         12.0,
                                                                         0.0,
                                                                         0.0),
-                                                            child: AutoSizeText(
+                                                            child: SelectionArea(
+                                                                child: AutoSizeText(
                                                               'Microsoft Office',
                                                               style: FlutterFlowTheme
                                                                       .of(context)
@@ -1980,7 +2134,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                         16.0,
                                                                   ),
                                                               minFontSize: 14.0,
-                                                            ),
+                                                            )),
                                                           ),
                                                           Padding(
                                                             padding:
@@ -1990,7 +2144,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                         12.0,
                                                                         0.0,
                                                                         0.0),
-                                                            child: AutoSizeText(
+                                                            child: SelectionArea(
+                                                                child: AutoSizeText(
                                                               'Experienced in using Microsoft Office suite for efficient document creation, data analysis, presentations, and effective communication.',
                                                               textAlign:
                                                                   TextAlign
@@ -2008,7 +2163,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                             .w300,
                                                                   ),
                                                               minFontSize: 12.0,
-                                                            ),
+                                                            )),
                                                           ),
                                                         ],
                                                       ),
@@ -2088,18 +2243,63 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                           24.0,
                                                                           24.0,
                                                                           24.0),
-                                                              child: ClipRRect(
-                                                                borderRadius:
-                                                                    BorderRadius
-                                                                        .circular(
+                                                              child: InkWell(
+                                                                splashColor: Colors
+                                                                    .transparent,
+                                                                focusColor: Colors
+                                                                    .transparent,
+                                                                hoverColor: Colors
+                                                                    .transparent,
+                                                                highlightColor:
+                                                                    Colors
+                                                                        .transparent,
+                                                                onTap:
+                                                                    () async {
+                                                                  await Navigator
+                                                                      .push(
+                                                                    context,
+                                                                    PageTransition(
+                                                                      type: PageTransitionType
+                                                                          .fade,
+                                                                      child:
+                                                                          FlutterFlowExpandedImageView(
+                                                                        image: Image
+                                                                            .asset(
+                                                                          'assets/images/download_(5)_(1).png',
+                                                                          fit: BoxFit
+                                                                              .contain,
+                                                                        ),
+                                                                        allowRotation:
+                                                                            false,
+                                                                        tag:
+                                                                            'imageTag4',
+                                                                        useHeroAnimation:
+                                                                            true,
+                                                                      ),
+                                                                    ),
+                                                                  );
+                                                                },
+                                                                child: Hero(
+                                                                  tag:
+                                                                      'imageTag4',
+                                                                  transitionOnUserGestures:
+                                                                      true,
+                                                                  child:
+                                                                      ClipRRect(
+                                                                    borderRadius:
+                                                                        BorderRadius.circular(
                                                                             24.0),
-                                                                child:
-                                                                    Image.asset(
-                                                                  'assets/images/download_(5)_(1).png',
-                                                                  width: 300.0,
-                                                                  height: 200.0,
-                                                                  fit: BoxFit
-                                                                      .cover,
+                                                                    child: Image
+                                                                        .asset(
+                                                                      'assets/images/download_(5)_(1).png',
+                                                                      width:
+                                                                          300.0,
+                                                                      height:
+                                                                          200.0,
+                                                                      fit: BoxFit
+                                                                          .cover,
+                                                                    ),
+                                                                  ),
                                                                 ),
                                                               ),
                                                             ),
@@ -2112,7 +2312,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                         23.0,
                                                                         0.0,
                                                                         0.0),
-                                                            child: AutoSizeText(
+                                                            child: SelectionArea(
+                                                                child: AutoSizeText(
                                                               'Figma',
                                                               style: FlutterFlowTheme
                                                                       .of(context)
@@ -2124,7 +2325,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                         16.0,
                                                                   ),
                                                               minFontSize: 14.0,
-                                                            ),
+                                                            )),
                                                           ),
                                                           Padding(
                                                             padding:
@@ -2134,7 +2335,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                         12.0,
                                                                         0.0,
                                                                         0.0),
-                                                            child: AutoSizeText(
+                                                            child: SelectionArea(
+                                                                child: AutoSizeText(
                                                               'Familiar with Figma, proficient in utilizing its collaborative design features. Capable of creating and prototyping designs',
                                                               textAlign:
                                                                   TextAlign
@@ -2152,7 +2354,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                             .w300,
                                                                   ),
                                                               minFontSize: 12.0,
-                                                            ),
+                                                            )),
                                                           ),
                                                         ],
                                                       ),
@@ -2220,18 +2422,63 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                           12.0,
                                                                           12.0,
                                                                           12.0),
-                                                              child: ClipRRect(
-                                                                borderRadius:
-                                                                    BorderRadius
-                                                                        .circular(
+                                                              child: InkWell(
+                                                                splashColor: Colors
+                                                                    .transparent,
+                                                                focusColor: Colors
+                                                                    .transparent,
+                                                                hoverColor: Colors
+                                                                    .transparent,
+                                                                highlightColor:
+                                                                    Colors
+                                                                        .transparent,
+                                                                onTap:
+                                                                    () async {
+                                                                  await Navigator
+                                                                      .push(
+                                                                    context,
+                                                                    PageTransition(
+                                                                      type: PageTransitionType
+                                                                          .fade,
+                                                                      child:
+                                                                          FlutterFlowExpandedImageView(
+                                                                        image: Image
+                                                                            .asset(
+                                                                          'assets/images/download_(3)_(1).png',
+                                                                          fit: BoxFit
+                                                                              .contain,
+                                                                        ),
+                                                                        allowRotation:
+                                                                            false,
+                                                                        tag:
+                                                                            'imageTag5',
+                                                                        useHeroAnimation:
+                                                                            true,
+                                                                      ),
+                                                                    ),
+                                                                  );
+                                                                },
+                                                                child: Hero(
+                                                                  tag:
+                                                                      'imageTag5',
+                                                                  transitionOnUserGestures:
+                                                                      true,
+                                                                  child:
+                                                                      ClipRRect(
+                                                                    borderRadius:
+                                                                        BorderRadius.circular(
                                                                             0.0),
-                                                                child:
-                                                                    Image.asset(
-                                                                  'assets/images/download_(3)_(1).png',
-                                                                  width: 300.0,
-                                                                  height: 200.0,
-                                                                  fit: BoxFit
-                                                                      .fitWidth,
+                                                                    child: Image
+                                                                        .asset(
+                                                                      'assets/images/download_(3)_(1).png',
+                                                                      width:
+                                                                          300.0,
+                                                                      height:
+                                                                          200.0,
+                                                                      fit: BoxFit
+                                                                          .fitWidth,
+                                                                    ),
+                                                                  ),
                                                                 ),
                                                               ),
                                                             ),
@@ -2244,7 +2491,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                         12.0,
                                                                         0.0,
                                                                         0.0),
-                                                            child: AutoSizeText(
+                                                            child: SelectionArea(
+                                                                child: AutoSizeText(
                                                               'Photoshop',
                                                               style: FlutterFlowTheme
                                                                       .of(context)
@@ -2256,7 +2504,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                         16.0,
                                                                   ),
                                                               minFontSize: 14.0,
-                                                            ),
+                                                            )),
                                                           ),
                                                           Padding(
                                                             padding:
@@ -2266,7 +2514,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                         12.0,
                                                                         0.0,
                                                                         0.0),
-                                                            child: AutoSizeText(
+                                                            child: SelectionArea(
+                                                                child: AutoSizeText(
                                                               'Capable of performing essential photo editing tasks and creating simple graphics.',
                                                               textAlign:
                                                                   TextAlign
@@ -2284,7 +2533,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                             .w300,
                                                                   ),
                                                               minFontSize: 12.0,
-                                                            ),
+                                                            )),
                                                           ),
                                                         ],
                                                       ),
@@ -2352,18 +2601,63 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                           24.0,
                                                                           24.0,
                                                                           24.0),
-                                                              child: ClipRRect(
-                                                                borderRadius:
-                                                                    BorderRadius
-                                                                        .circular(
+                                                              child: InkWell(
+                                                                splashColor: Colors
+                                                                    .transparent,
+                                                                focusColor: Colors
+                                                                    .transparent,
+                                                                hoverColor: Colors
+                                                                    .transparent,
+                                                                highlightColor:
+                                                                    Colors
+                                                                        .transparent,
+                                                                onTap:
+                                                                    () async {
+                                                                  await Navigator
+                                                                      .push(
+                                                                    context,
+                                                                    PageTransition(
+                                                                      type: PageTransitionType
+                                                                          .fade,
+                                                                      child:
+                                                                          FlutterFlowExpandedImageView(
+                                                                        image: Image
+                                                                            .asset(
+                                                                          'assets/images/download_(4).png',
+                                                                          fit: BoxFit
+                                                                              .contain,
+                                                                        ),
+                                                                        allowRotation:
+                                                                            false,
+                                                                        tag:
+                                                                            'imageTag6',
+                                                                        useHeroAnimation:
+                                                                            true,
+                                                                      ),
+                                                                    ),
+                                                                  );
+                                                                },
+                                                                child: Hero(
+                                                                  tag:
+                                                                      'imageTag6',
+                                                                  transitionOnUserGestures:
+                                                                      true,
+                                                                  child:
+                                                                      ClipRRect(
+                                                                    borderRadius:
+                                                                        BorderRadius.circular(
                                                                             0.0),
-                                                                child:
-                                                                    Image.asset(
-                                                                  'assets/images/download_(4).png',
-                                                                  width: 300.0,
-                                                                  height: 200.0,
-                                                                  fit: BoxFit
-                                                                      .cover,
+                                                                    child: Image
+                                                                        .asset(
+                                                                      'assets/images/download_(4).png',
+                                                                      width:
+                                                                          300.0,
+                                                                      height:
+                                                                          200.0,
+                                                                      fit: BoxFit
+                                                                          .cover,
+                                                                    ),
+                                                                  ),
                                                                 ),
                                                               ),
                                                             ),
@@ -2376,7 +2670,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                         12.0,
                                                                         0.0,
                                                                         0.0),
-                                                            child: AutoSizeText(
+                                                            child: SelectionArea(
+                                                                child: AutoSizeText(
                                                               'Adobe Illustrator',
                                                               style: FlutterFlowTheme
                                                                       .of(context)
@@ -2388,7 +2683,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                         16.0,
                                                                   ),
                                                               minFontSize: 14.0,
-                                                            ),
+                                                            )),
                                                           ),
                                                           Padding(
                                                             padding:
@@ -2398,7 +2693,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                         12.0,
                                                                         0.0,
                                                                         0.0),
-                                                            child: AutoSizeText(
+                                                            child: SelectionArea(
+                                                                child: AutoSizeText(
                                                               'Familiar with the fundamentals of Adobe Illustrator, proficient in using the software for basic graphic design tasks.',
                                                               textAlign:
                                                                   TextAlign
@@ -2416,7 +2712,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                             .w300,
                                                                   ),
                                                               minFontSize: 12.0,
-                                                            ),
+                                                            )),
                                                           ),
                                                         ],
                                                       ),
@@ -2449,319 +2745,380 @@ class _HomePageWidgetState extends State<HomePageWidget>
                               ),
                               child: Align(
                                 alignment: const AlignmentDirectional(0.0, 0.0),
-                                child: SingleChildScrollView(
-                                  primary: false,
-                                  child: Column(
-                                    mainAxisSize: MainAxisSize.max,
-                                    mainAxisAlignment: MainAxisAlignment.start,
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.center,
-                                    children: [
-                                      SingleChildScrollView(
-                                        child: Column(
-                                          mainAxisSize: MainAxisSize.max,
-                                          children: [
-                                            Align(
-                                              alignment: const AlignmentDirectional(
-                                                  0.0, -1.0),
-                                              child: Padding(
-                                                padding: const EdgeInsetsDirectional
-                                                    .fromSTEB(
-                                                        24.0, 24.0, 24.0, 0.0),
-                                                child: Column(
+                                child: Column(
+                                  mainAxisSize: MainAxisSize.max,
+                                  mainAxisAlignment: MainAxisAlignment.start,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: [
+                                    SingleChildScrollView(
+                                      child: Column(
+                                        mainAxisSize: MainAxisSize.max,
+                                        children: [
+                                          Align(
+                                            alignment:
+                                                const AlignmentDirectional(0.0, -1.0),
+                                            child: Padding(
+                                              padding: const EdgeInsetsDirectional
+                                                  .fromSTEB(
+                                                      24.0, 24.0, 24.0, 0.0),
+                                              child: Column(
+                                                mainAxisSize: MainAxisSize.max,
+                                                mainAxisAlignment:
+                                                    MainAxisAlignment.start,
+                                                crossAxisAlignment:
+                                                    CrossAxisAlignment.stretch,
+                                                children: [
+                                                  Row(
+                                                    mainAxisSize:
+                                                        MainAxisSize.max,
+                                                    mainAxisAlignment:
+                                                        MainAxisAlignment.start,
+                                                    crossAxisAlignment:
+                                                        CrossAxisAlignment
+                                                            .center,
+                                                    children: [
+                                                      Align(
+                                                        alignment:
+                                                            const AlignmentDirectional(
+                                                                -1.0, 0.0),
+                                                        child: Padding(
+                                                          padding:
+                                                              const EdgeInsetsDirectional
+                                                                  .fromSTEB(
+                                                                      24.0,
+                                                                      0.0,
+                                                                      0.0,
+                                                                      0.0),
+                                                          child: RichText(
+                                                            textScaleFactor:
+                                                                MediaQuery.of(
+                                                                        context)
+                                                                    .textScaleFactor,
+                                                            text: TextSpan(
+                                                              children: [
+                                                                TextSpan(
+                                                                  text: 'MY\n',
+                                                                  style: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .override(
+                                                                        fontFamily:
+                                                                            'Readex Pro',
+                                                                        color: FlutterFlowTheme.of(context)
+                                                                            .primaryText,
+                                                                        fontSize:
+                                                                            40.0,
+                                                                        fontWeight:
+                                                                            FontWeight.normal,
+                                                                      ),
+                                                                ),
+                                                                TextSpan(
+                                                                  text:
+                                                                      'PORTFOLIO',
+                                                                  style:
+                                                                      TextStyle(
+                                                                    color: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .accent3,
+                                                                    fontWeight:
+                                                                        FontWeight
+                                                                            .w800,
+                                                                  ),
+                                                                )
+                                                              ],
+                                                              style: FlutterFlowTheme
+                                                                      .of(context)
+                                                                  .bodyMedium
+                                                                  .override(
+                                                                    fontFamily:
+                                                                        'Readex Pro',
+                                                                    fontSize:
+                                                                        40.0,
+                                                                  ),
+                                                            ),
+                                                            textAlign:
+                                                                TextAlign.start,
+                                                          ),
+                                                        ),
+                                                      ),
+                                                    ],
+                                                  ),
+                                                ],
+                                              ),
+                                            ),
+                                          ),
+                                          Padding(
+                                            padding:
+                                                const EdgeInsetsDirectional.fromSTEB(
+                                                    0.0, 48.0, 0.0, 0.0),
+                                            child: Row(
+                                              mainAxisSize: MainAxisSize.max,
+                                              mainAxisAlignment:
+                                                  MainAxisAlignment.center,
+                                              crossAxisAlignment:
+                                                  CrossAxisAlignment.center,
+                                              children: [
+                                                Column(
                                                   mainAxisSize:
                                                       MainAxisSize.max,
-                                                  mainAxisAlignment:
-                                                      MainAxisAlignment.start,
                                                   crossAxisAlignment:
-                                                      CrossAxisAlignment
-                                                          .stretch,
+                                                      CrossAxisAlignment.start,
                                                   children: [
-                                                    Row(
-                                                      mainAxisSize:
-                                                          MainAxisSize.max,
-                                                      mainAxisAlignment:
-                                                          MainAxisAlignment
-                                                              .start,
-                                                      crossAxisAlignment:
-                                                          CrossAxisAlignment
-                                                              .center,
-                                                      children: [
-                                                        Align(
-                                                          alignment:
-                                                              const AlignmentDirectional(
-                                                                  -1.0, 0.0),
-                                                          child: Padding(
+                                                    Align(
+                                                      alignment:
+                                                          const AlignmentDirectional(
+                                                              0.0, 0.0),
+                                                      child: RichText(
+                                                        textScaleFactor:
+                                                            MediaQuery.of(
+                                                                    context)
+                                                                .textScaleFactor,
+                                                        text: TextSpan(
+                                                          children: [
+                                                            TextSpan(
+                                                              text:
+                                                                  'Hi There,\n',
+                                                              style: FlutterFlowTheme
+                                                                      .of(context)
+                                                                  .bodyMedium
+                                                                  .override(
+                                                                    fontFamily:
+                                                                        'Readex Pro',
+                                                                    color: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .primaryText,
+                                                                    fontSize:
+                                                                        40.0,
+                                                                    fontWeight:
+                                                                        FontWeight
+                                                                            .normal,
+                                                                  ),
+                                                            ),
+                                                            TextSpan(
+                                                              text: 'I\'m ',
+                                                              style: TextStyle(
+                                                                color: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .primaryText,
+                                                                fontWeight:
+                                                                    FontWeight
+                                                                        .w600,
+                                                              ),
+                                                            ),
+                                                            TextSpan(
+                                                              text:
+                                                                  'CLARENCE CANLAS',
+                                                              style: TextStyle(
+                                                                color: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .accent3,
+                                                                fontWeight:
+                                                                    FontWeight
+                                                                        .bold,
+                                                              ),
+                                                            )
+                                                          ],
+                                                          style: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .bodyMedium
+                                                              .override(
+                                                                fontFamily:
+                                                                    'Readex Pro',
+                                                                fontSize: 40.0,
+                                                              ),
+                                                        ),
+                                                        textAlign:
+                                                            TextAlign.start,
+                                                      ).animateOnPageLoad(
+                                                          animationsMap[
+                                                              'richTextOnPageLoadAnimation1']!),
+                                                    ),
+                                                    Align(
+                                                      alignment:
+                                                          const AlignmentDirectional(
+                                                              0.0, 0.0),
+                                                      child: Padding(
+                                                        padding:
+                                                            const EdgeInsetsDirectional
+                                                                .fromSTEB(
+                                                                    0.0,
+                                                                    24.0,
+                                                                    0.0,
+                                                                    0.0),
+                                                        child: FFButtonWidget(
+                                                          onPressed: () async {
+                                                            unawaited(
+                                                              () async {
+                                                                await launchURL(
+                                                                    'https://firebasestorage.googleapis.com/v0/b/portfolio-pelc40.appspot.com/o/CV%20Researchers.pdf?alt=media&token=1973b454-2ebb-4fa3-b19b-5b5bf069996c');
+                                                              }(),
+                                                            );
+                                                          },
+                                                          text: 'Download CV',
+                                                          options:
+                                                              FFButtonOptions(
+                                                            height: 40.0,
                                                             padding:
                                                                 const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         24.0,
                                                                         0.0,
+                                                                        24.0,
+                                                                        0.0),
+                                                            iconPadding:
+                                                                const EdgeInsetsDirectional
+                                                                    .fromSTEB(
+                                                                        0.0,
+                                                                        0.0,
                                                                         0.0,
                                                                         0.0),
-                                                            child: RichText(
-                                                              textScaleFactor:
-                                                                  MediaQuery.of(
-                                                                          context)
-                                                                      .textScaleFactor,
-                                                              text: TextSpan(
-                                                                children: [
-                                                                  TextSpan(
-                                                                    text:
-                                                                        'MY\n',
-                                                                    style: FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .bodyMedium
-                                                                        .override(
-                                                                          fontFamily:
-                                                                              'Readex Pro',
-                                                                          color:
-                                                                              FlutterFlowTheme.of(context).primaryText,
-                                                                          fontSize:
-                                                                              40.0,
-                                                                          fontWeight:
-                                                                              FontWeight.normal,
-                                                                        ),
-                                                                  ),
-                                                                  TextSpan(
-                                                                    text:
-                                                                        'PORTFOLIO',
-                                                                    style:
-                                                                        TextStyle(
-                                                                      color: FlutterFlowTheme.of(
-                                                                              context)
-                                                                          .accent3,
-                                                                      fontWeight:
-                                                                          FontWeight
-                                                                              .w800,
-                                                                    ),
-                                                                  )
-                                                                ],
-                                                                style: FlutterFlowTheme.of(
+                                                            color: FlutterFlowTheme
+                                                                    .of(context)
+                                                                .accent3,
+                                                            textStyle:
+                                                                FlutterFlowTheme.of(
                                                                         context)
-                                                                    .bodyMedium
-                                                                    .override(
-                                                                      fontFamily:
-                                                                          'Readex Pro',
-                                                                      fontSize:
-                                                                          40.0,
-                                                                    ),
-                                                              ),
-                                                              textAlign:
-                                                                  TextAlign
-                                                                      .start,
-                                                            ),
-                                                          ),
-                                                        ),
-                                                      ],
-                                                    ),
-                                                  ],
-                                                ),
-                                              ),
-                                            ),
-                                            Padding(
-                                              padding: const EdgeInsetsDirectional
-                                                  .fromSTEB(
-                                                      0.0, 48.0, 0.0, 0.0),
-                                              child: Row(
-                                                mainAxisSize: MainAxisSize.max,
-                                                mainAxisAlignment:
-                                                    MainAxisAlignment.center,
-                                                crossAxisAlignment:
-                                                    CrossAxisAlignment.center,
-                                                children: [
-                                                  Column(
-                                                    mainAxisSize:
-                                                        MainAxisSize.max,
-                                                    crossAxisAlignment:
-                                                        CrossAxisAlignment
-                                                            .start,
-                                                    children: [
-                                                      Align(
-                                                        alignment:
-                                                            const AlignmentDirectional(
-                                                                0.0, 0.0),
-                                                        child: RichText(
-                                                          textScaleFactor:
-                                                              MediaQuery.of(
-                                                                      context)
-                                                                  .textScaleFactor,
-                                                          text: TextSpan(
-                                                            children: [
-                                                              TextSpan(
-                                                                text:
-                                                                    'Hi There,\n',
-                                                                style: FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .bodyMedium
+                                                                    .titleSmall
                                                                     .override(
                                                                       fontFamily:
                                                                           'Readex Pro',
                                                                       color: FlutterFlowTheme.of(
                                                                               context)
                                                                           .primaryText,
-                                                                      fontSize:
-                                                                          40.0,
-                                                                      fontWeight:
-                                                                          FontWeight
-                                                                              .normal,
                                                                     ),
-                                                              ),
-                                                              TextSpan(
-                                                                text: 'I\'m ',
-                                                                style:
-                                                                    TextStyle(
-                                                                  color: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .primaryText,
-                                                                  fontWeight:
-                                                                      FontWeight
-                                                                          .w600,
-                                                                ),
-                                                              ),
-                                                              TextSpan(
-                                                                text:
-                                                                    'CLARENCE CANLAS',
-                                                                style:
-                                                                    TextStyle(
-                                                                  color: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .accent3,
-                                                                  fontWeight:
-                                                                      FontWeight
-                                                                          .bold,
-                                                                ),
-                                                              )
-                                                            ],
-                                                            style: FlutterFlowTheme
-                                                                    .of(context)
-                                                                .bodyMedium
-                                                                .override(
-                                                                  fontFamily:
-                                                                      'Readex Pro',
-                                                                  fontSize:
-                                                                      40.0,
-                                                                ),
-                                                          ),
-                                                          textAlign:
-                                                              TextAlign.start,
-                                                        ).animateOnPageLoad(
-                                                            animationsMap[
-                                                                'richTextOnPageLoadAnimation1']!),
-                                                      ),
-                                                      Align(
-                                                        alignment:
-                                                            const AlignmentDirectional(
-                                                                0.0, 0.0),
-                                                        child: Padding(
-                                                          padding:
-                                                              const EdgeInsetsDirectional
-                                                                  .fromSTEB(
-                                                                      0.0,
-                                                                      24.0,
-                                                                      0.0,
-                                                                      0.0),
-                                                          child: FFButtonWidget(
-                                                            onPressed:
-                                                                () async {
-                                                              unawaited(
-                                                                () async {
-                                                                  await launchURL(
-                                                                      'https://firebasestorage.googleapis.com/v0/b/portfolio-pelc40.appspot.com/o/CV%20Researchers.pdf?alt=media&token=1973b454-2ebb-4fa3-b19b-5b5bf069996c');
-                                                                }(),
-                                                              );
-                                                            },
-                                                            text: 'Download CV',
-                                                            options:
-                                                                FFButtonOptions(
-                                                              height: 40.0,
-                                                              padding:
-                                                                  const EdgeInsetsDirectional
-                                                                      .fromSTEB(
-                                                                          24.0,
-                                                                          0.0,
-                                                                          24.0,
-                                                                          0.0),
-                                                              iconPadding:
-                                                                  const EdgeInsetsDirectional
-                                                                      .fromSTEB(
-                                                                          0.0,
-                                                                          0.0,
-                                                                          0.0,
-                                                                          0.0),
+                                                            elevation: 3.0,
+                                                            borderSide:
+                                                                BorderSide(
                                                               color: FlutterFlowTheme
                                                                       .of(context)
-                                                                  .accent3,
-                                                              textStyle:
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .titleSmall
-                                                                      .override(
-                                                                        fontFamily:
-                                                                            'Readex Pro',
-                                                                        color: FlutterFlowTheme.of(context)
-                                                                            .primaryText,
-                                                                      ),
-                                                              elevation: 3.0,
-                                                              borderSide:
-                                                                  BorderSide(
-                                                                color: FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .primaryText,
-                                                                width: 1.0,
-                                                              ),
-                                                              borderRadius:
-                                                                  BorderRadius
-                                                                      .circular(
-                                                                          8.0),
-                                                              hoverColor: const Color(
-                                                                  0xFFB07F0D),
-                                                              hoverBorderSide:
-                                                                  const BorderSide(
-                                                                color: Color(
-                                                                    0xFFB0B0B6),
-                                                                width: 1.0,
-                                                              ),
+                                                                  .primaryText,
+                                                              width: 1.0,
+                                                            ),
+                                                            borderRadius:
+                                                                BorderRadius
+                                                                    .circular(
+                                                                        8.0),
+                                                            hoverColor: const Color(
+                                                                0xFFB07F0D),
+                                                            hoverBorderSide:
+                                                                const BorderSide(
+                                                              color: Color(
+                                                                  0xFFB0B0B6),
+                                                              width: 1.0,
                                                             ),
                                                           ),
                                                         ),
                                                       ),
-                                                    ],
-                                                  ),
-                                                  Align(
-                                                    alignment:
-                                                        const AlignmentDirectional(
-                                                            0.0, 0.0),
-                                                    child: Padding(
-                                                      padding:
-                                                          const EdgeInsetsDirectional
-                                                              .fromSTEB(
-                                                                  24.0,
-                                                                  48.0,
-                                                                  24.0,
-                                                                  48.0),
-                                                      child: Container(
-                                                        width:
-                                                            MediaQuery.sizeOf(
-                                                                        context)
-                                                                    .width *
-                                                                0.18,
-                                                        height:
-                                                            MediaQuery.sizeOf(
-                                                                        context)
-                                                                    .height *
-                                                                0.28,
-                                                        decoration:
-                                                            BoxDecoration(
+                                                    ),
+                                                  ],
+                                                ),
+                                                Align(
+                                                  alignment:
+                                                      const AlignmentDirectional(
+                                                          0.0, 0.0),
+                                                  child: Padding(
+                                                    padding:
+                                                        const EdgeInsetsDirectional
+                                                            .fromSTEB(
+                                                                24.0,
+                                                                48.0,
+                                                                24.0,
+                                                                48.0),
+                                                    child: Container(
+                                                      width: MediaQuery.sizeOf(
+                                                                  context)
+                                                              .width *
+                                                          0.18,
+                                                      height: MediaQuery.sizeOf(
+                                                                  context)
+                                                              .height *
+                                                          0.28,
+                                                      decoration: BoxDecoration(
+                                                        color: FlutterFlowTheme
+                                                                .of(context)
+                                                            .secondaryBackground,
+                                                        border: Border.all(
                                                           color: FlutterFlowTheme
                                                                   .of(context)
-                                                              .secondaryBackground,
-                                                          border: Border.all(
-                                                            color: FlutterFlowTheme
-                                                                    .of(context)
-                                                                .accent1,
-                                                          ),
+                                                              .accent1,
                                                         ),
+                                                      ),
+                                                      child: ClipRRect(
+                                                        borderRadius:
+                                                            const BorderRadius.only(
+                                                          bottomLeft:
+                                                              Radius.circular(
+                                                                  0.0),
+                                                          bottomRight:
+                                                              Radius.circular(
+                                                                  0.0),
+                                                          topLeft:
+                                                              Radius.circular(
+                                                                  0.0),
+                                                          topRight:
+                                                              Radius.circular(
+                                                                  0.0),
+                                                        ),
+                                                        child: Image.asset(
+                                                          'assets/images/Screenshot_20231121_165640_Gallery.jpg',
+                                                          width:
+                                                              MediaQuery.sizeOf(
+                                                                          context)
+                                                                      .width *
+                                                                  1.0,
+                                                          height:
+                                                              MediaQuery.sizeOf(
+                                                                          context)
+                                                                      .height *
+                                                                  1.0,
+                                                          fit: BoxFit.cover,
+                                                        ),
+                                                      ),
+                                                    ),
+                                                  ),
+                                                ),
+                                              ],
+                                            ),
+                                          ),
+                                          Padding(
+                                            padding:
+                                                const EdgeInsetsDirectional.fromSTEB(
+                                                    24.0, 18.0, 0.0, 0.0),
+                                            child: Row(
+                                              mainAxisSize: MainAxisSize.max,
+                                              mainAxisAlignment:
+                                                  MainAxisAlignment.start,
+                                              crossAxisAlignment:
+                                                  CrossAxisAlignment.end,
+                                              children: [
+                                                Expanded(
+                                                  child: Align(
+                                                    alignment:
+                                                        const AlignmentDirectional(
+                                                            1.0, 0.0),
+                                                    child: Container(
+                                                      width: MediaQuery.sizeOf(
+                                                                  context)
+                                                              .width *
+                                                          0.25,
+                                                      height: MediaQuery.sizeOf(
+                                                                  context)
+                                                              .height *
+                                                          0.2,
+                                                      decoration: BoxDecoration(
+                                                        color:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .accent1,
+                                                      ),
+                                                      child: Padding(
+                                                        padding:
+                                                            const EdgeInsetsDirectional
+                                                                .fromSTEB(
+                                                                    0.0,
+                                                                    1.0,
+                                                                    0.0,
+                                                                    0.0),
                                                         child: ClipRRect(
                                                           borderRadius:
                                                               const BorderRadius.only(
@@ -2779,7 +3136,12 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                     0.0),
                                                           ),
                                                           child: Image.asset(
-                                                            'assets/images/Screenshot_20231121_165640_Gallery.jpg',
+                                                            Theme.of(context)
+                                                                        .brightness ==
+                                                                    Brightness
+                                                                        .dark
+                                                                ? 'assets/images/crence-high-resolution-logo.png'
+                                                                : 'assets/images/crence-high-resolution-logo_(2).png',
                                                             width: MediaQuery
                                                                         .sizeOf(
                                                                             context)
@@ -2792,106 +3154,20 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                 1.0,
                                                             fit: BoxFit.cover,
                                                           ),
-                                                        ),
+                                                        ).animateOnPageLoad(
+                                                            animationsMap[
+                                                                'imageOnPageLoadAnimation']!),
                                                       ),
                                                     ),
                                                   ),
-                                                ],
-                                              ),
+                                                ),
+                                              ],
                                             ),
-                                            Padding(
-                                              padding: const EdgeInsetsDirectional
-                                                  .fromSTEB(
-                                                      24.0, 18.0, 0.0, 0.0),
-                                              child: Row(
-                                                mainAxisSize: MainAxisSize.max,
-                                                mainAxisAlignment:
-                                                    MainAxisAlignment.start,
-                                                crossAxisAlignment:
-                                                    CrossAxisAlignment.end,
-                                                children: [
-                                                  Expanded(
-                                                    child: Align(
-                                                      alignment:
-                                                          const AlignmentDirectional(
-                                                              1.0, 0.0),
-                                                      child: Container(
-                                                        width:
-                                                            MediaQuery.sizeOf(
-                                                                        context)
-                                                                    .width *
-                                                                0.25,
-                                                        height:
-                                                            MediaQuery.sizeOf(
-                                                                        context)
-                                                                    .height *
-                                                                0.2,
-                                                        decoration:
-                                                            BoxDecoration(
-                                                          color: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .accent1,
-                                                        ),
-                                                        child: Padding(
-                                                          padding:
-                                                              const EdgeInsetsDirectional
-                                                                  .fromSTEB(
-                                                                      0.0,
-                                                                      1.0,
-                                                                      0.0,
-                                                                      0.0),
-                                                          child: ClipRRect(
-                                                            borderRadius:
-                                                                const BorderRadius
-                                                                    .only(
-                                                              bottomLeft: Radius
-                                                                  .circular(
-                                                                      0.0),
-                                                              bottomRight:
-                                                                  Radius
-                                                                      .circular(
-                                                                          0.0),
-                                                              topLeft: Radius
-                                                                  .circular(
-                                                                      0.0),
-                                                              topRight: Radius
-                                                                  .circular(
-                                                                      0.0),
-                                                            ),
-                                                            child: Image.asset(
-                                                              Theme.of(context)
-                                                                          .brightness ==
-                                                                      Brightness
-                                                                          .dark
-                                                                  ? 'assets/images/crence-high-resolution-logo.png'
-                                                                  : 'assets/images/crence-high-resolution-logo_(2).png',
-                                                              width: MediaQuery
-                                                                          .sizeOf(
-                                                                              context)
-                                                                      .width *
-                                                                  1.0,
-                                                              height: MediaQuery
-                                                                          .sizeOf(
-                                                                              context)
-                                                                      .height *
-                                                                  1.0,
-                                                              fit: BoxFit.cover,
-                                                            ),
-                                                          ).animateOnPageLoad(
-                                                              animationsMap[
-                                                                  'imageOnPageLoadAnimation']!),
-                                                        ),
-                                                      ),
-                                                    ),
-                                                  ),
-                                                ],
-                                              ),
-                                            ),
-                                          ],
-                                        ),
+                                          ),
+                                        ],
                                       ),
-                                    ],
-                                  ),
+                                    ),
+                                  ],
                                 ),
                               ),
                             ).animateOnPageLoad(animationsMap[
@@ -2925,7 +3201,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                               padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       0.0, 12.0, 0.0, 12.0),
-                                              child: Text(
+                                              child: SelectionArea(
+                                                  child: Text(
                                                 'Resume',
                                                 style:
                                                     FlutterFlowTheme.of(context)
@@ -2935,7 +3212,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                               'Kelly Slab',
                                                           fontSize: 20.0,
                                                         ),
-                                              ),
+                                              )),
                                             ),
                                             Container(
                                               width: (MediaQuery.sizeOf(context)
@@ -2984,7 +3261,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                               padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       0.0, 12.0, 0.0, 12.0),
-                                              child: Text(
+                                              child: SelectionArea(
+                                                  child: Text(
                                                 'Curriculum Vitae',
                                                 style:
                                                     FlutterFlowTheme.of(context)
@@ -2994,7 +3272,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                               'Kelly Slab',
                                                           fontSize: 20.0,
                                                         ),
-                                              ),
+                                              )),
                                             ),
                                             Padding(
                                               padding: const EdgeInsetsDirectional
@@ -3162,7 +3440,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                 padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         12.0, 12.0, 12.0, 12.0),
-                                                child: Text(
+                                                child: SelectionArea(
+                                                    child: Text(
                                                   'During college, I dived into tech and creativity, pouring my passion into cool projects. Starting with basic programming, I rode the wave of innovation and learning until the peak of my academic adventure. It was a journey of growth, turning ideas into real accomplishments.',
                                                   textAlign: TextAlign.center,
                                                   style: FlutterFlowTheme.of(
@@ -3174,7 +3453,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                         fontWeight:
                                                             FontWeight.w300,
                                                       ),
-                                                ),
+                                                )),
                                               ),
                                             ).animateOnPageLoad(animationsMap[
                                                 'containerOnPageLoadAnimation3']!),
@@ -3228,16 +3507,60 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                       24.0,
                                                                       24.0,
                                                                       24.0),
-                                                          child: ClipRRect(
-                                                            borderRadius:
-                                                                BorderRadius
-                                                                    .circular(
-                                                                        24.0),
-                                                            child: Image.asset(
-                                                              'assets/images/Murfy.png',
-                                                              width: 300.0,
-                                                              height: 200.0,
-                                                              fit: BoxFit.fill,
+                                                          child: InkWell(
+                                                            splashColor: Colors
+                                                                .transparent,
+                                                            focusColor: Colors
+                                                                .transparent,
+                                                            hoverColor: Colors
+                                                                .transparent,
+                                                            highlightColor:
+                                                                Colors
+                                                                    .transparent,
+                                                            onTap: () async {
+                                                              await Navigator
+                                                                  .push(
+                                                                context,
+                                                                PageTransition(
+                                                                  type:
+                                                                      PageTransitionType
+                                                                          .fade,
+                                                                  child:
+                                                                      FlutterFlowExpandedImageView(
+                                                                    image: Image
+                                                                        .asset(
+                                                                      'assets/images/Murfy.png',
+                                                                      fit: BoxFit
+                                                                          .contain,
+                                                                    ),
+                                                                    allowRotation:
+                                                                        false,
+                                                                    tag:
+                                                                        'imageTag9',
+                                                                    useHeroAnimation:
+                                                                        true,
+                                                                  ),
+                                                                ),
+                                                              );
+                                                            },
+                                                            child: Hero(
+                                                              tag: 'imageTag9',
+                                                              transitionOnUserGestures:
+                                                                  true,
+                                                              child: ClipRRect(
+                                                                borderRadius:
+                                                                    BorderRadius
+                                                                        .circular(
+                                                                            24.0),
+                                                                child:
+                                                                    Image.asset(
+                                                                  'assets/images/Murfy.png',
+                                                                  width: 300.0,
+                                                                  height: 200.0,
+                                                                  fit: BoxFit
+                                                                      .fill,
+                                                                ),
+                                                              ),
                                                             ),
                                                           ),
                                                         ),
@@ -3267,16 +3590,60 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                       24.0,
                                                                       24.0,
                                                                       24.0),
-                                                          child: ClipRRect(
-                                                            borderRadius:
-                                                                BorderRadius
-                                                                    .circular(
-                                                                        24.0),
-                                                            child: Image.asset(
-                                                              'assets/images/Murphy2.png',
-                                                              width: 300.0,
-                                                              height: 200.0,
-                                                              fit: BoxFit.fill,
+                                                          child: InkWell(
+                                                            splashColor: Colors
+                                                                .transparent,
+                                                            focusColor: Colors
+                                                                .transparent,
+                                                            hoverColor: Colors
+                                                                .transparent,
+                                                            highlightColor:
+                                                                Colors
+                                                                    .transparent,
+                                                            onTap: () async {
+                                                              await Navigator
+                                                                  .push(
+                                                                context,
+                                                                PageTransition(
+                                                                  type:
+                                                                      PageTransitionType
+                                                                          .fade,
+                                                                  child:
+                                                                      FlutterFlowExpandedImageView(
+                                                                    image: Image
+                                                                        .asset(
+                                                                      'assets/images/Murphy2.png',
+                                                                      fit: BoxFit
+                                                                          .contain,
+                                                                    ),
+                                                                    allowRotation:
+                                                                        false,
+                                                                    tag:
+                                                                        'imageTag10',
+                                                                    useHeroAnimation:
+                                                                        true,
+                                                                  ),
+                                                                ),
+                                                              );
+                                                            },
+                                                            child: Hero(
+                                                              tag: 'imageTag10',
+                                                              transitionOnUserGestures:
+                                                                  true,
+                                                              child: ClipRRect(
+                                                                borderRadius:
+                                                                    BorderRadius
+                                                                        .circular(
+                                                                            24.0),
+                                                                child:
+                                                                    Image.asset(
+                                                                  'assets/images/Murphy2.png',
+                                                                  width: 300.0,
+                                                                  height: 200.0,
+                                                                  fit: BoxFit
+                                                                      .fill,
+                                                                ),
+                                                              ),
                                                             ),
                                                           ),
                                                         ),
@@ -3291,7 +3658,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                         const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 12.0,
                                                                 0.0, 0.0),
-                                                    child: Text(
+                                                    child: SelectionArea(
+                                                        child: Text(
                                                       'Murphy Game',
                                                       style: FlutterFlowTheme
                                                               .of(context)
@@ -3303,7 +3671,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                             fontWeight:
                                                                 FontWeight.bold,
                                                           ),
-                                                    ).animateOnPageLoad(
+                                                    )).animateOnPageLoad(
                                                         animationsMap[
                                                             'textOnPageLoadAnimation1']!),
                                                   ),
@@ -3327,14 +3695,15 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                     12.0,
                                                                     12.0,
                                                                     12.0),
-                                                        child: Text(
+                                                        child: SelectionArea(
+                                                            child: Text(
                                                           '"In the fun world of "Murphy," you control a special pair a cat named Murfia and a dog named Buffy on an amazing journey. They accidentally drink a scientist\'s potion that combines them into one. Now, Murfia and Buffy need to go through magical levels, grab the potion they need, and face different challenges."\n\n In our final project for the Game Development subject, we crafted the game "Murphy." ',
                                                           textAlign:
                                                               TextAlign.center,
                                                           style: FlutterFlowTheme
                                                                   .of(context)
                                                               .bodyMedium,
-                                                        ),
+                                                        )),
                                                       ),
                                                     ).animateOnPageLoad(
                                                         animationsMap[
@@ -3399,18 +3768,63 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                         24.0,
                                                                         24.0,
                                                                         24.0),
-                                                            child: ClipRRect(
-                                                              borderRadius:
-                                                                  BorderRadius
-                                                                      .circular(
-                                                                          24.0),
-                                                              child:
-                                                                  Image.asset(
-                                                                'assets/images/Wikaeta.jpg',
-                                                                width: 100.0,
-                                                                height: 200.0,
-                                                                fit:
-                                                                    BoxFit.fill,
+                                                            child: InkWell(
+                                                              splashColor: Colors
+                                                                  .transparent,
+                                                              focusColor: Colors
+                                                                  .transparent,
+                                                              hoverColor: Colors
+                                                                  .transparent,
+                                                              highlightColor:
+                                                                  Colors
+                                                                      .transparent,
+                                                              onTap: () async {
+                                                                await Navigator
+                                                                    .push(
+                                                                  context,
+                                                                  PageTransition(
+                                                                    type: PageTransitionType
+                                                                        .fade,
+                                                                    child:
+                                                                        FlutterFlowExpandedImageView(
+                                                                      image: Image
+                                                                          .asset(
+                                                                        'assets/images/Wikaeta.jpg',
+                                                                        fit: BoxFit
+                                                                            .contain,
+                                                                      ),
+                                                                      allowRotation:
+                                                                          false,
+                                                                      tag:
+                                                                          'imageTag11',
+                                                                      useHeroAnimation:
+                                                                          true,
+                                                                    ),
+                                                                  ),
+                                                                );
+                                                              },
+                                                              child: Hero(
+                                                                tag:
+                                                                    'imageTag11',
+                                                                transitionOnUserGestures:
+                                                                    true,
+                                                                child:
+                                                                    ClipRRect(
+                                                                  borderRadius:
+                                                                      BorderRadius
+                                                                          .circular(
+                                                                              24.0),
+                                                                  child: Image
+                                                                      .asset(
+                                                                    'assets/images/Wikaeta.jpg',
+                                                                    width:
+                                                                        100.0,
+                                                                    height:
+                                                                        200.0,
+                                                                    fit: BoxFit
+                                                                        .fill,
+                                                                  ),
+                                                                ),
                                                               ),
                                                             ),
                                                           ),
@@ -3457,18 +3871,63 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                         24.0,
                                                                         24.0,
                                                                         24.0),
-                                                            child: ClipRRect(
-                                                              borderRadius:
-                                                                  BorderRadius
-                                                                      .circular(
-                                                                          24.0),
-                                                              child:
-                                                                  Image.asset(
-                                                                'assets/images/Screenshot_20240117_010914.jpg',
-                                                                width: 100.0,
-                                                                height: 200.0,
-                                                                fit:
-                                                                    BoxFit.fill,
+                                                            child: InkWell(
+                                                              splashColor: Colors
+                                                                  .transparent,
+                                                              focusColor: Colors
+                                                                  .transparent,
+                                                              hoverColor: Colors
+                                                                  .transparent,
+                                                              highlightColor:
+                                                                  Colors
+                                                                      .transparent,
+                                                              onTap: () async {
+                                                                await Navigator
+                                                                    .push(
+                                                                  context,
+                                                                  PageTransition(
+                                                                    type: PageTransitionType
+                                                                        .fade,
+                                                                    child:
+                                                                        FlutterFlowExpandedImageView(
+                                                                      image: Image
+                                                                          .asset(
+                                                                        'assets/images/Screenshot_20240117_010914.jpg',
+                                                                        fit: BoxFit
+                                                                            .contain,
+                                                                      ),
+                                                                      allowRotation:
+                                                                          false,
+                                                                      tag:
+                                                                          'imageTag12',
+                                                                      useHeroAnimation:
+                                                                          true,
+                                                                    ),
+                                                                  ),
+                                                                );
+                                                              },
+                                                              child: Hero(
+                                                                tag:
+                                                                    'imageTag12',
+                                                                transitionOnUserGestures:
+                                                                    true,
+                                                                child:
+                                                                    ClipRRect(
+                                                                  borderRadius:
+                                                                      BorderRadius
+                                                                          .circular(
+                                                                              24.0),
+                                                                  child: Image
+                                                                      .asset(
+                                                                    'assets/images/Screenshot_20240117_010914.jpg',
+                                                                    width:
+                                                                        100.0,
+                                                                    height:
+                                                                        200.0,
+                                                                    fit: BoxFit
+                                                                        .fill,
+                                                                  ),
+                                                                ),
                                                               ),
                                                             ),
                                                           ),
@@ -3515,18 +3974,63 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                         24.0,
                                                                         24.0,
                                                                         24.0),
-                                                            child: ClipRRect(
-                                                              borderRadius:
-                                                                  BorderRadius
-                                                                      .circular(
-                                                                          24.0),
-                                                              child:
-                                                                  Image.asset(
-                                                                'assets/images/Screenshot_20240117_010918.jpg',
-                                                                width: 100.0,
-                                                                height: 200.0,
-                                                                fit:
-                                                                    BoxFit.fill,
+                                                            child: InkWell(
+                                                              splashColor: Colors
+                                                                  .transparent,
+                                                              focusColor: Colors
+                                                                  .transparent,
+                                                              hoverColor: Colors
+                                                                  .transparent,
+                                                              highlightColor:
+                                                                  Colors
+                                                                      .transparent,
+                                                              onTap: () async {
+                                                                await Navigator
+                                                                    .push(
+                                                                  context,
+                                                                  PageTransition(
+                                                                    type: PageTransitionType
+                                                                        .fade,
+                                                                    child:
+                                                                        FlutterFlowExpandedImageView(
+                                                                      image: Image
+                                                                          .asset(
+                                                                        'assets/images/Screenshot_20240117_010918.jpg',
+                                                                        fit: BoxFit
+                                                                            .contain,
+                                                                      ),
+                                                                      allowRotation:
+                                                                          false,
+                                                                      tag:
+                                                                          'imageTag13',
+                                                                      useHeroAnimation:
+                                                                          true,
+                                                                    ),
+                                                                  ),
+                                                                );
+                                                              },
+                                                              child: Hero(
+                                                                tag:
+                                                                    'imageTag13',
+                                                                transitionOnUserGestures:
+                                                                    true,
+                                                                child:
+                                                                    ClipRRect(
+                                                                  borderRadius:
+                                                                      BorderRadius
+                                                                          .circular(
+                                                                              24.0),
+                                                                  child: Image
+                                                                      .asset(
+                                                                    'assets/images/Screenshot_20240117_010918.jpg',
+                                                                    width:
+                                                                        100.0,
+                                                                    height:
+                                                                        200.0,
+                                                                    fit: BoxFit
+                                                                        .fill,
+                                                                  ),
+                                                                ),
                                                               ),
                                                             ),
                                                           ),
@@ -3544,7 +4048,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                   12.0,
                                                                   0.0,
                                                                   0.0),
-                                                      child: Text(
+                                                      child: SelectionArea(
+                                                          child: Text(
                                                         'Wikaeta',
                                                         style: FlutterFlowTheme
                                                                 .of(context)
@@ -3557,7 +4062,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                   FontWeight
                                                                       .bold,
                                                             ),
-                                                      ).animateOnPageLoad(
+                                                      )).animateOnPageLoad(
                                                           animationsMap[
                                                               'textOnPageLoadAnimation2']!),
                                                     ),
@@ -3585,14 +4090,15 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                       12.0,
                                                                       12.0,
                                                                       12.0),
-                                                          child: Text(
+                                                          child: SelectionArea(
+                                                              child: Text(
                                                             '"Wikaeta" brings the classic \'Four Pics, One Word\' game to life with a Kapampangan twist. In this engaging and brain-teasing experience, players are presented with four images that represent a word in the rich Kapampangan language."\n\n In our final project for the FilDis subject, we crafted the game "Wikaeta." ',
                                                             textAlign: TextAlign
                                                                 .center,
                                                             style: FlutterFlowTheme
                                                                     .of(context)
                                                                 .bodyMedium,
-                                                          ),
+                                                          )),
                                                         ),
                                                       ),
                                                     ),
@@ -3669,19 +4175,64 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                           24.0,
                                                                           24.0),
                                                                   child:
-                                                                      ClipRRect(
-                                                                    borderRadius:
-                                                                        BorderRadius.circular(
-                                                                            24.0),
-                                                                    child: Image
-                                                                        .asset(
-                                                                      'assets/images/Logo_Color.png',
-                                                                      width:
-                                                                          300.0,
-                                                                      height:
-                                                                          200.0,
-                                                                      fit: BoxFit
-                                                                          .contain,
+                                                                      InkWell(
+                                                                    splashColor:
+                                                                        Colors
+                                                                            .transparent,
+                                                                    focusColor:
+                                                                        Colors
+                                                                            .transparent,
+                                                                    hoverColor:
+                                                                        Colors
+                                                                            .transparent,
+                                                                    highlightColor:
+                                                                        Colors
+                                                                            .transparent,
+                                                                    onTap:
+                                                                        () async {
+                                                                      await Navigator
+                                                                          .push(
+                                                                        context,
+                                                                        PageTransition(
+                                                                          type:
+                                                                              PageTransitionType.fade,
+                                                                          child:
+                                                                              FlutterFlowExpandedImageView(
+                                                                            image:
+                                                                                Image.asset(
+                                                                              'assets/images/Logo_Color.png',
+                                                                              fit: BoxFit.contain,
+                                                                            ),
+                                                                            allowRotation:
+                                                                                false,
+                                                                            tag:
+                                                                                'imageTag14',
+                                                                            useHeroAnimation:
+                                                                                true,
+                                                                          ),
+                                                                        ),
+                                                                      );
+                                                                    },
+                                                                    child: Hero(
+                                                                      tag:
+                                                                          'imageTag14',
+                                                                      transitionOnUserGestures:
+                                                                          true,
+                                                                      child:
+                                                                          ClipRRect(
+                                                                        borderRadius:
+                                                                            BorderRadius.circular(24.0),
+                                                                        child: Image
+                                                                            .asset(
+                                                                          'assets/images/Logo_Color.png',
+                                                                          width:
+                                                                              300.0,
+                                                                          height:
+                                                                              200.0,
+                                                                          fit: BoxFit
+                                                                              .contain,
+                                                                        ),
+                                                                      ),
                                                                     ),
                                                                   ),
                                                                 ),
@@ -3726,19 +4277,64 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                           24.0,
                                                                           24.0),
                                                                   child:
-                                                                      ClipRRect(
-                                                                    borderRadius:
-                                                                        BorderRadius.circular(
-                                                                            24.0),
-                                                                    child: Image
-                                                                        .asset(
-                                                                      'assets/images/Screenshot_20240117_011247.jpg',
-                                                                      width:
-                                                                          100.0,
-                                                                      height:
-                                                                          200.0,
-                                                                      fit: BoxFit
-                                                                          .fill,
+                                                                      InkWell(
+                                                                    splashColor:
+                                                                        Colors
+                                                                            .transparent,
+                                                                    focusColor:
+                                                                        Colors
+                                                                            .transparent,
+                                                                    hoverColor:
+                                                                        Colors
+                                                                            .transparent,
+                                                                    highlightColor:
+                                                                        Colors
+                                                                            .transparent,
+                                                                    onTap:
+                                                                        () async {
+                                                                      await Navigator
+                                                                          .push(
+                                                                        context,
+                                                                        PageTransition(
+                                                                          type:
+                                                                              PageTransitionType.fade,
+                                                                          child:
+                                                                              FlutterFlowExpandedImageView(
+                                                                            image:
+                                                                                Image.asset(
+                                                                              'assets/images/Screenshot_20240117_011247.jpg',
+                                                                              fit: BoxFit.contain,
+                                                                            ),
+                                                                            allowRotation:
+                                                                                false,
+                                                                            tag:
+                                                                                'imageTag15',
+                                                                            useHeroAnimation:
+                                                                                true,
+                                                                          ),
+                                                                        ),
+                                                                      );
+                                                                    },
+                                                                    child: Hero(
+                                                                      tag:
+                                                                          'imageTag15',
+                                                                      transitionOnUserGestures:
+                                                                          true,
+                                                                      child:
+                                                                          ClipRRect(
+                                                                        borderRadius:
+                                                                            BorderRadius.circular(24.0),
+                                                                        child: Image
+                                                                            .asset(
+                                                                          'assets/images/Screenshot_20240117_011247.jpg',
+                                                                          width:
+                                                                              100.0,
+                                                                          height:
+                                                                              200.0,
+                                                                          fit: BoxFit
+                                                                              .fill,
+                                                                        ),
+                                                                      ),
                                                                     ),
                                                                   ),
                                                                 ),
@@ -3783,19 +4379,64 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                           24.0,
                                                                           24.0),
                                                                   child:
-                                                                      ClipRRect(
-                                                                    borderRadius:
-                                                                        BorderRadius.circular(
-                                                                            24.0),
-                                                                    child: Image
-                                                                        .asset(
-                                                                      'assets/images/KP1.png',
-                                                                      width:
-                                                                          300.0,
-                                                                      height:
-                                                                          200.0,
-                                                                      fit: BoxFit
-                                                                          .fill,
+                                                                      InkWell(
+                                                                    splashColor:
+                                                                        Colors
+                                                                            .transparent,
+                                                                    focusColor:
+                                                                        Colors
+                                                                            .transparent,
+                                                                    hoverColor:
+                                                                        Colors
+                                                                            .transparent,
+                                                                    highlightColor:
+                                                                        Colors
+                                                                            .transparent,
+                                                                    onTap:
+                                                                        () async {
+                                                                      await Navigator
+                                                                          .push(
+                                                                        context,
+                                                                        PageTransition(
+                                                                          type:
+                                                                              PageTransitionType.fade,
+                                                                          child:
+                                                                              FlutterFlowExpandedImageView(
+                                                                            image:
+                                                                                Image.asset(
+                                                                              'assets/images/KP1.png',
+                                                                              fit: BoxFit.contain,
+                                                                            ),
+                                                                            allowRotation:
+                                                                                false,
+                                                                            tag:
+                                                                                'imageTag16',
+                                                                            useHeroAnimation:
+                                                                                true,
+                                                                          ),
+                                                                        ),
+                                                                      );
+                                                                    },
+                                                                    child: Hero(
+                                                                      tag:
+                                                                          'imageTag16',
+                                                                      transitionOnUserGestures:
+                                                                          true,
+                                                                      child:
+                                                                          ClipRRect(
+                                                                        borderRadius:
+                                                                            BorderRadius.circular(24.0),
+                                                                        child: Image
+                                                                            .asset(
+                                                                          'assets/images/KP1.png',
+                                                                          width:
+                                                                              300.0,
+                                                                          height:
+                                                                              200.0,
+                                                                          fit: BoxFit
+                                                                              .fill,
+                                                                        ),
+                                                                      ),
                                                                     ),
                                                                   ),
                                                                 ),
@@ -3850,33 +4491,73 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                         24.0,
                                                                         24.0,
                                                                         24.0),
-                                                                child:
-                                                                    ClipRRect(
-                                                                  borderRadius:
-                                                                      const BorderRadius
-                                                                          .only(
-                                                                    bottomLeft:
-                                                                        Radius.circular(
-                                                                            0.0),
-                                                                    bottomRight:
-                                                                        Radius.circular(
-                                                                            0.0),
-                                                                    topLeft: Radius
-                                                                        .circular(
-                                                                            0.0),
-                                                                    topRight: Radius
-                                                                        .circular(
-                                                                            0.0),
-                                                                  ),
-                                                                  child: Image
-                                                                      .asset(
-                                                                    'assets/images/KP3.png',
-                                                                    width:
-                                                                        300.0,
-                                                                    height:
-                                                                        200.0,
-                                                                    fit: BoxFit
-                                                                        .fill,
+                                                                child: InkWell(
+                                                                  splashColor:
+                                                                      Colors
+                                                                          .transparent,
+                                                                  focusColor: Colors
+                                                                      .transparent,
+                                                                  hoverColor: Colors
+                                                                      .transparent,
+                                                                  highlightColor:
+                                                                      Colors
+                                                                          .transparent,
+                                                                  onTap:
+                                                                      () async {
+                                                                    await Navigator
+                                                                        .push(
+                                                                      context,
+                                                                      PageTransition(
+                                                                        type: PageTransitionType
+                                                                            .fade,
+                                                                        child:
+                                                                            FlutterFlowExpandedImageView(
+                                                                          image:
+                                                                              Image.asset(
+                                                                            'assets/images/KP3.png',
+                                                                            fit:
+                                                                                BoxFit.contain,
+                                                                          ),
+                                                                          allowRotation:
+                                                                              false,
+                                                                          tag:
+                                                                              'imageTag17',
+                                                                          useHeroAnimation:
+                                                                              true,
+                                                                        ),
+                                                                      ),
+                                                                    );
+                                                                  },
+                                                                  child: Hero(
+                                                                    tag:
+                                                                        'imageTag17',
+                                                                    transitionOnUserGestures:
+                                                                        true,
+                                                                    child:
+                                                                        ClipRRect(
+                                                                      borderRadius:
+                                                                          const BorderRadius
+                                                                              .only(
+                                                                        bottomLeft:
+                                                                            Radius.circular(0.0),
+                                                                        bottomRight:
+                                                                            Radius.circular(0.0),
+                                                                        topLeft:
+                                                                            Radius.circular(0.0),
+                                                                        topRight:
+                                                                            Radius.circular(0.0),
+                                                                      ),
+                                                                      child: Image
+                                                                          .asset(
+                                                                        'assets/images/KP3.png',
+                                                                        width:
+                                                                            300.0,
+                                                                        height:
+                                                                            200.0,
+                                                                        fit: BoxFit
+                                                                            .fill,
+                                                                      ),
+                                                                    ),
                                                                   ),
                                                                 ),
                                                               ),
@@ -3920,21 +4601,64 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                         24.0,
                                                                         24.0,
                                                                         24.0),
-                                                                child:
-                                                                    ClipRRect(
-                                                                  borderRadius:
-                                                                      BorderRadius
-                                                                          .circular(
+                                                                child: InkWell(
+                                                                  splashColor:
+                                                                      Colors
+                                                                          .transparent,
+                                                                  focusColor: Colors
+                                                                      .transparent,
+                                                                  hoverColor: Colors
+                                                                      .transparent,
+                                                                  highlightColor:
+                                                                      Colors
+                                                                          .transparent,
+                                                                  onTap:
+                                                                      () async {
+                                                                    await Navigator
+                                                                        .push(
+                                                                      context,
+                                                                      PageTransition(
+                                                                        type: PageTransitionType
+                                                                            .fade,
+                                                                        child:
+                                                                            FlutterFlowExpandedImageView(
+                                                                          image:
+                                                                              Image.asset(
+                                                                            'assets/images/KP2.png',
+                                                                            fit:
+                                                                                BoxFit.contain,
+                                                                          ),
+                                                                          allowRotation:
+                                                                              false,
+                                                                          tag:
+                                                                              'imageTag18',
+                                                                          useHeroAnimation:
+                                                                              true,
+                                                                        ),
+                                                                      ),
+                                                                    );
+                                                                  },
+                                                                  child: Hero(
+                                                                    tag:
+                                                                        'imageTag18',
+                                                                    transitionOnUserGestures:
+                                                                        true,
+                                                                    child:
+                                                                        ClipRRect(
+                                                                      borderRadius:
+                                                                          BorderRadius.circular(
                                                                               24.0),
-                                                                  child: Image
-                                                                      .asset(
-                                                                    'assets/images/KP2.png',
-                                                                    width:
-                                                                        300.0,
-                                                                    height:
-                                                                        200.0,
-                                                                    fit: BoxFit
-                                                                        .fill,
+                                                                      child: Image
+                                                                          .asset(
+                                                                        'assets/images/KP2.png',
+                                                                        width:
+                                                                            300.0,
+                                                                        height:
+                                                                            200.0,
+                                                                        fit: BoxFit
+                                                                            .fill,
+                                                                      ),
+                                                                    ),
                                                                   ),
                                                                 ),
                                                               ),
@@ -3952,7 +4676,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                   12.0,
                                                                   0.0,
                                                                   0.0),
-                                                      child: Text(
+                                                      child: SelectionArea(
+                                                          child: Text(
                                                         'Kapam-Pamangan',
                                                         style: FlutterFlowTheme
                                                                 .of(context)
@@ -3965,7 +4690,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                   FontWeight
                                                                       .bold,
                                                             ),
-                                                      ),
+                                                      )),
                                                     ),
                                                     Padding(
                                                       padding:
@@ -3991,14 +4716,15 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                       12.0,
                                                                       12.0,
                                                                       12.0),
-                                                          child: Text(
+                                                          child: SelectionArea(
+                                                              child: Text(
                                                             '"Kapam-Pamangan" is a culinary adventure brought to life through our innovative capstone project. This app seamlessly blends the love for Kapampangan cuisine with modern technology, offering both users and administrators a delightful experience.\n\n"Kapam-Pamangan" goes beyond being just a food app; it\'s a cultural celebration. Our capstone project aims to connect people with the delectable world of Kapampangan dishes while providing administrators with the tools to maintain a dynamic and engaging culinary platform.\n\nExperience the fusion of tradition and technology with "Kapam-Pamangan," where every dish tells a story, and every order is a celebration of Kapampangan culinary heritage.',
                                                             textAlign: TextAlign
                                                                 .center,
                                                             style: FlutterFlowTheme
                                                                     .of(context)
                                                                 .bodyMedium,
-                                                          ),
+                                                          )),
                                                         ),
                                                       ),
                                                     ),
